@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <header>
+        <h2>
+            <a href="https://sujeitoprogramador.com" target="_blank">
+                Sujeito Programador
+            </a>
+            , FullStack Pro
+        </h2>
+    </header>
+    <main>
+        <h1>Calculadora IMC</h1>
+        <form onsubmit="return calcular(event)">
+            <label for="peso">Digite seu peso:</label>
+            <input type="text" name="peso" id="peso" placeholder="Exemplo: 56" />
+            <label for="altura">Digite sua altura:</label>
+            <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.56" />
+            <input type="submit" value="Calcular IMC" id="button" />
+        </form>
+            <div class="resultado" id="resultado"></div>
+    </main>
+    <footer>
+        by&nbsp;
+        <a href="https://maxbuzin.com" target="_blank">Max Buzin</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
